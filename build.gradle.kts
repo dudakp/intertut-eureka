@@ -42,4 +42,4 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-springBoot { mainClass.set("com.markoid.packit.PackitApplicationKt") }
+springBoot { mainClass.set("sk.dudak.intertut.intertuteureka.IntertutEurekaApplication") }

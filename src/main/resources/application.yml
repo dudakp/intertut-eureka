@@ -1,12 +1,18 @@
 spring:
   application:
     name: eureka-discovery-service
+  security:
+    user:
+      name: ${EUREKA_USER}
+      password: ${EUREKA_PWD}
+      roles: SYSTEM
+
 
 server:
-  port: 8080
+  port: 8888
 eureka:
   client:
     registerWithEureka: false
     fetchRegistry: false
     service-url:
-      defaultZone: http://localhost:8080/eureka
+      defaultZone: http://localhost:8888/eureka

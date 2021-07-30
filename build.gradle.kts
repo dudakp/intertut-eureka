@@ -44,9 +44,9 @@ tasks.withType<Test> {
 
 tasks.withType<Jar> {
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
-//    manifest {
-//        attributes["Main-Class"] = "sk.dudak.intertut.intertuteureka.IntertutEurekaApplication"
-//    }
+    manifest {
+        attributes["Main-Class"] = "sk.dudak.intertut.intertuteureka.IntertutEurekaApplicationKt"
+    }
     configurations["compileClasspath"].forEach { file: File ->
         from(zipTree(file.absoluteFile))
     }

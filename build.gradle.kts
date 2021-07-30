@@ -43,6 +43,7 @@ tasks.withType<Test> {
 }
 
 tasks.withType<Jar> {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
     manifest {
         attributes["Main-Class"] = "sk.dudak.intertut.intertuteureka.IntertutEurekaApplication.kt"
     }

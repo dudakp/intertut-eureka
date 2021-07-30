@@ -42,9 +42,4 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
-tasks.withType<Jar> {
-    duplicatesStrategy = DuplicatesStrategy.INCLUDE
-    manifest {
-        attributes["Main-Class"] = "sk.dudak.intertut.intertuteureka.IntertutEurekaApplication"
-    }
-}
+springBoot { mainClass.set("com.markoid.packit.PackitApplicationKt") }

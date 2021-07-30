@@ -41,5 +41,3 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
     useJUnitPlatform()
 }
-
-springBoot { mainClass.set("sk.dudak.intertut.intertuteureka.IntertutEurekaApplication") }
